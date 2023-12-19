@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-bg-color: rgb(191, 191, 236);
+    --sub-main-bg-color:#dbd9d9;
+     
+     
+}
+.dark-theme{
+  --main-bg-color: rgb(105, 103, 103);
+    --sub-main-bg-color:#fff; 
+}
+.main-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: var(--main-bg-color);
+   padding: 10px;
+}
+.sub-container{
+    width: 100%;
+    max-width: 900px;
+    background-color: var(--sub-main-bg-color);
+    height: 400px;
+    display: flex;
+    box-shadow: 9px 9px 61px -12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 9px 9px 61px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 9px 61px -12px rgba(0,0,0,0.75);
+}
+.bx.bx-moon{
+    margin-top: 30px;
+    margin-left: 20px ;
+    font-size: 20px;
+   
+}
+
+.sub-container .addList_container{ 
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.addList_items .inputField{
+    width: 90%;
+    padding: 10px 20px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgb(199, 198, 198);
+}
+.sub-container .addList_container .addList_items{
+    /* background-color: red; */
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    text-transform: capitalize
+}
+
+.sub-container .addList_container .addList_items p{
+    text-align: center;
+    cursor: pointer;
+}
+.msg{
+    color:red
+}
+.sub-container .addList_container .addList_items button{
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 18px;
+    padding: 5px 50px;
+    outline: none;
+    border: 1px solid grey;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform:capitalize;
+}
+
+.sub-container .listContainer{
+    width: 70%;
+    padding: 10px 10px;
+    overflow: hidden;
+}
+.sub-container .listContainer form {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+
+}
+.sub-container .listContainer form input{
+    width: 100%;
+    padding: 10px;
+    outline:none;
+    border: none;
+    border:1px solid gray;
+    border-radius: 20px;
+}
+.sub-container .listContainer .list{
+    display: grid;
+    height: 80px;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+   
+   
+}
+.sub-container .listContainer .list .box{
+    transition: all 0.5s;
+    width: 90%;
+}
+.sub-container .listContainer .list .box h1{
+    font-size: 15px;
+    margin-top: 8px;
+    text-transform: capitalize;
+}
+.sub-container .listContainer .list .box:hover{
+    transform: scale(1.1);
+}
+
+.sub-container .list li{
+    list-style: none;
+    background-color: #fff;
+    text-align: center;
+    height: 80px;
+    box-shadow: 9px 9px 61px -12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 9px 9px 61px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 9px 61px -12px rgba(0,0,0,0.75);
+}
+.span{
+    margin-top: 20px;
+    font-size: 18px;
+    font: 700;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+.icon{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+i.bx.bx-trash.delete{
+    font-size: 20px;
+    color: rgb(233, 26, 60);
+}
+i.bx.bx-edit.edit{
+    font-size: 20px;
+    color: green
+}
+
+@media(max-width:640px){
+    .sub-container{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+    }
+    .sub-container .addList_container{
+        width: 100%;
+        padding: 10px;
+        height: 30%;
+       
+      
+    }
+    .sub-container .listContainer{
+        width: 100%;
+        height: 100%;
+    }
+    .addList_items .inputField{
+        width: 100%;
+    }
+    .sub-container .addList_container .addList_items button{
+        margin:0 auto;
+        padding: 10px;
+    }
+}
+@media (max-width:375px) {
+    .sub-container .listContainer .list{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
