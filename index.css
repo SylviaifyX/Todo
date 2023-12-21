@@ -22,7 +22,7 @@
     justify-content: center;
     background-color: var(--main-bg-color);
     padding: 10px;
-   position: relative;
+   /* position: relative; */
 }
 .sub-container{
     width: 100%;
@@ -44,9 +44,6 @@ button.bx.bx-moon{
     margin-top: 30px;
     margin-left: 20px ;
     font-size: 20px;
-    position: absolute;
-    top: 0px;
-   left: 20px;
 }
 .sub-container .addList_container{ 
     width: 30%;
@@ -201,21 +198,28 @@ button.close-pop-up{
 
 
 @media(max-width:640px){
+    .bx.bx-moon{
+        margin-top: 20px;
+        margin-left: 20px ;
+        font-size: 20px;
+    }
     .sub-container{
         display: flex;
         height: 100%;
         flex-direction: column;
+        
     }
     .sub-container .addList_container{
         width: 100%;
         padding: 10px;
         height: 30%;
-       
+       margin-top: 30px;
       
     }
     .sub-container .listContainer{
         width: 100%;
         height: 100%;
+        margin-top: 20px;
     }
     .addList_items .inputField{
         width: 100%;
@@ -228,5 +232,8 @@ button.close-pop-up{
 @media (max-width:375px) {
     .sub-container .listContainer .list{
         grid-template-columns: repeat(2,1fr);
+    }
+    .showList{
+        width: 50%;
     }
 }
