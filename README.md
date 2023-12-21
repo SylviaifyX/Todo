@@ -1,6 +1,6 @@
 # Build a Simple To-Do List Application 
 
-## Objective:Create a basic To-Do List application using HTML, CSS, and vanilla JavaScript. 
+## Objective: Create a basic To-Do List application . 
 * The application should allow users to add tasks and remove them. 
 * Specifications: The application should have an input field for users to add new tasks.
 * Each task should be displayed as a separate item with a "Remove" button.
@@ -9,3 +9,5 @@
 *   Submit the completed project by providing a link to your GitHub repository
 *   Bonus (Optional): Implement additional features, such as marking tasks as completed or editing task names. Add animations or transitions to make the user experience more engaging.
 *   Ensure the application is responsive and works well on different screen sizes.
+
+Skill: HTML, CSS, and vanilla JavaScript
