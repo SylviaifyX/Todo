@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo_Lost</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
+  <body>
     <section class="main-container">
-        <div class="sub-container">
-            <div class="bx bx-moon" id="darkMode-icon"></div>
-            <div class="addList_container">
-                <form class="addList_items">
-                    <h1>Add List</h1>
-                    <input type="text" name="input" placeholder="add list" class="inputField" id="input_field">
-                    <p class="msg" id="msg"></p>
-                    <button class="btn">click</button>
-                </form>
-            </div>
-            <div class="listContainer">
-                <form>
-                    <input type="text" name="search" placeholder="searchList" id="">
-                </form>
-                <ul class="list" id="gallery-list">
-                </ul>
-            </div>
-
+      <div class="sub-container">
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+        <div class="addList_container">
+          <form class="addList_items">
+            <h1>Add List</h1>
+            <input
+              type="text"
+              name="input"
+              placeholder="add list"
+              class="inputField"
+              id="input_field"
+            />
+            <p class="msg" id="msg"></p>
+            <button class="btn">click</button>
+          </form>
         </div>
-        <div class="showList" id="showListItems">
-
+        <div class="listContainer">
+          <form>
+            <input type="text" name="search" placeholder="searchList" id="" />
+          </form>
+          <ul class="list" id="gallery-list"></ul>
         </div>
+      </div>
+      <div class="showList" id="showListItems">
+        <div class="close-pop-up">x</div>
+        <h2>list</h2>
+        <p>all list</p>
+        <p>view all pop up</p>
+      </div>
     </section>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

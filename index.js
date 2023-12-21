@@ -4,12 +4,17 @@ let gallery = document.querySelector("#gallery-list");
 let switchIcon = document.querySelector("#darkMode-icon")
 let message = document.getElementById("msg")
 let showAllList = document.getElementById("showListItems")
-all = []
+let closePop = document.querySelector(".close-pop-up")
+let all = []
+
+
+
 //calling the submit from the form when user input and click or listening for a submit event//
 galleryForm.addEventListener("submit", (e) =>{
     e.preventDefault()
     formValidation()
     showAll()
+    setTimeout(popList, 1000)  
     galleryForm.reset();
 });
 //form validation//
@@ -23,7 +28,7 @@ let formValidation = () =>{
         message.innerHTML = "input can't be empty"
     }
 }
-//geeting the value the user input//
+//getting the value the user input//
 const generateList = (input_field) =>{
    const template =
     `<li class="box">
@@ -61,7 +66,17 @@ const ToogleMode = () =>{
 switchIcon.addEventListener("click", ToogleMode)
 
 let showAll = () =>{
-    all.push = inputField.value
+    all.push =(inputField.value)
+    all 
     console.log(all)
-    
+
 }
+
+//pop list//
+let popList = () =>{
+ showAllList.style.display = "block"
+}
+//closing the pop list//
+closePop.addEventListener("click", () => {
+    showAllList.style.display = "none"
+});
