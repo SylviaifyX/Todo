@@ -12,7 +12,7 @@
 }
 .dark-theme{
   --main-bg-color: rgb(105, 103, 103);
-    --sub-main-bg-color:#fff; 
+  --sub-main-bg-color:#fff; 
 }
 .main-container{
     height: 100vh;
@@ -20,8 +20,8 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-   background-color: var(--main-bg-color);
-   padding: 10px;
+    background-color: var(--main-bg-color);
+    padding: 10px;
    position: relative;
 }
 .sub-container{
@@ -34,13 +34,20 @@
     -webkit-box-shadow: 9px 9px 61px -12px rgba(0,0,0,0.75);
     -moz-box-shadow: 9px 9px 61px -12px rgba(0,0,0,0.75);
 }
+button.bx.bx-moon{
+    cursor: pointer;
+    border-radius: 50%;
+    border: #fff;
+    padding: 5px;
+}
 .bx.bx-moon{
     margin-top: 30px;
     margin-left: 20px ;
     font-size: 20px;
-   
+    position: absolute;
+    top: 0px;
+   left: 20px;
 }
-
 .sub-container .addList_container{ 
     width: 30%;
     display: flex;
@@ -48,9 +55,10 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    position: relative;
 }
 .addList_items .inputField{
-    width: 90%;
+    width: 100%;
     padding: 10px 20px;
     outline: none;
     background-color: transparent;
@@ -62,9 +70,10 @@
     width: 100%;
     height: 200px;
     display: flex;
-    gap: 5px;
+    gap: 8px;
     flex-direction: column;
-    text-transform: capitalize
+    text-transform: capitalize;
+    padding: 8px;
 }
 
 .sub-container .addList_container .addList_items p{
@@ -83,6 +92,7 @@
     border: 1px solid grey;
     cursor: pointer;
     font-size: 20px;
+   margin-left: 25px;
     text-transform:capitalize;
 }
 
@@ -111,8 +121,6 @@
     height: 80px;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-   
-   
 }
 .sub-container .listContainer .list .box{
     transition: all 0.5s;
@@ -167,8 +175,6 @@ i.bx.bx-edit.edit{
     border-radius: 7px;
     right: 20px;
     animation: moveToLeft 1s ease ;
-
-   
 }
 @keyframes moveToLeft {
     0% {
@@ -181,9 +187,16 @@ i.bx.bx-edit.edit{
 .close-pop-up{
     position: absolute;
     top: 5px;
-    font-size: 20px;
+    font-size: 15px;
     right: 10px;
     cursor: pointer;
+}
+button.close-pop-up{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border: none;
+
 }
 
 
